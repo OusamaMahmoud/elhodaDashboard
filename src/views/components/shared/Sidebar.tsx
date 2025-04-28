@@ -6,7 +6,7 @@ import { IoSettings } from "react-icons/io5";
 import { useTranslation } from "react-i18next";
 import { PiMicrosoftTeamsLogoFill } from "react-icons/pi";
 import { RiPagesLine, RiUserSearchFill } from "react-icons/ri";
-import { FaServicestack } from "react-icons/fa";
+import { FaServicestack, FaSlidersH } from "react-icons/fa";
 import { useAuth } from "../../../contexts/AuthProvider";
 import apiClient from "../../services/api-client";
 import logout from "/assets/sidebar/logout.svg";
@@ -115,13 +115,13 @@ const Sidebar = ({ isOpen }: { isOpen: (bool: boolean) => void }) => {
             <FaServicestack />
             <span className="capitalize ">Services</span>
           </NavLink>
-          {/* <NavLink
-            to={`/sliders`}
+          <NavLink
+            to={`/fqs`}
             className={({ isActive }) => (isActive ? activeLink : normalLink)}
           >
-            <FaSliders />
-            <span className="capitalize ">Sliders</span>
-          </NavLink> */}
+            <FaSlidersH />
+            <span className="capitalize ">FQS</span>
+          </NavLink>
           <NavLink
             to={`/clients`}
             className={({ isActive }) => (isActive ? activeLink : normalLink)}

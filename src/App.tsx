@@ -32,6 +32,8 @@ import AddBlogsForm from "./views/menu/blogs/AddBlogsForm";
 import Blogs from "./views/menu/blogs/Blogs";
 import Reviews from "./views/reviews/Reviews";
 import AddReviewsForm from "./views/reviews/AddReviewsForm";
+import Fqs from "./views/menu/fqs/Fqs";
+import AddFqsForm from "./views/menu/fqs/AddFqsForm";
 
 function App() {
   useEffect(() => {
@@ -117,11 +119,18 @@ function App() {
           <Route path="sliders/add/:id" element={<AddSliderForm />} />
           {/* Sliders Routes */}
 
+          {/* fqs Routes */}
+          <Route path="fqs" element={<Fqs />} />
+          <Route path="fqs/add" element={<AddFqsForm />} />
+          <Route path="fqs/add/:id" element={<AddFqsForm />} />
+          {/* fqs Routes */}
+
           {/* Settings Routes */}
           <Route path="settings" element={<Settings />} />
           <Route path="settings/add" element={<AddSettingsForm />} />
           <Route path="settings/add/:id" element={<AddSettingsForm />} />
           {/* Settings Routes */}
+
           {/* Reviews Routes */}
           <Route path="reviews" element={<Reviews />} />
           <Route path="reviews/add" element={<AddReviewsForm />} />
